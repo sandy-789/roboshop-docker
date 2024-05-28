@@ -10,5 +10,5 @@ COPY server.js /opt/server/
 RUN npm install
 RUN echo Hello World
 USER root
-RUN adduser user
+RUN adduser --disabled-password user
 CMD ["node", "server.js"]

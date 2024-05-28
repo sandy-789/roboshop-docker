@@ -9,5 +9,6 @@ COPY package.json /opt/server/
 COPY server.js /opt/server/
 RUN npm install
 RUN echo Hello World
+USER root
 RUN adduser user
 CMD ["node", "server.js"]
